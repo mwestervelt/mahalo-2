@@ -1,15 +1,21 @@
-#root {
-  background-color: #F6F6F6
+html{
+  height: 100%;
 }
-@font-face {
-  font-family: boomville;
-  src: url(Boomville.otf)
+
+body {
+  background: linear-gradient(45deg, #ff8365 0%,#ff8365 45%,#f6f6f6 98%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100%;
 }
 
 @font-face {
+  font-family: boomville;
+  src: url(Boomville.otf);
   font-family: linotte;
   src: url(Linotte.woff);
 }
+
 
 h1,h2,h3,h4,h5,h6{
   font-family: linotte;
@@ -21,7 +27,7 @@ h1,h2,h3,h4,h5,h6{
 
 .title {
   /* text-align: right; */
-  background-color: green;
+  /* background-color: green; */
   font-size: 100px;
   width: 60%;
 }
@@ -29,19 +35,52 @@ h1,h2,h3,h4,h5,h6{
 .logo {
   /* justify-content: right; */
   text-align: right;
-  margin-top: 50px;
-  margin-left: 20px;
-  width: 40%;
-  background-color: #F6F6F6
+  margin-left: 3em;
+  padding-left: 3em;
+  padding-right:15em;
+  width: 35%;
+  /* background-color: #FF8365; */
+  float: right;
+  margin-top: 5em;
 }
 
 .logo-div {
-  align-items: right
+  width: 80em;
+  /* background-color: #FF8365; */
+}
+
+.box {
+  height: 7em;
+  width: 90em;
+  z-index: -1;
+  color: #f6f6f6;
+  font-size: 1.6em;
+  padding-top: 23em;
+  margin-left: 10em;
+  margin-top: 10em;
+}
+
+.line2{
+  color:black;
+}
+
+.btn{
+  float: right;
+  margin-right: 15em;
+  padding: 0.7em 3em;
+  border-radius: 15px 15px;
+  font-size: 2em;
+  font-family: 'linotte', sans-serif;
+
+}
+.btn:hover{
+  opacity: 0.2
 }
 
 /* colors:
 peach: #FF8365
 green: #O63B16
+#0a5f23
 yellow: #FFB000
 white: #F6F6F6
 black: #000000 */
