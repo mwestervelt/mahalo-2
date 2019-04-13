@@ -5,15 +5,23 @@
   text-align: right;
   background-color: green;
   font-size: 100px;
+  width: 60%;
 }
 
 .logo {
-  align-items: center;
-  justify-content: right;
+  /* justify-content: right; */
+  text-align: right;
   margin-top: 50px;
   margin-left: 20px;
   width: 40%;
   background-color: #F6F6F6
+}
+
+.logo-div {
+  background-color: #F6F6F6;
+  text-align: right;
+  display: flex;
+  align-items: right;
 }
 
 /* colors:

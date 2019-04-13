@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
             MAHALO
             <br></br><br></br>
-            <CalendarComp />
+            <Home />
 
       </div>
     );
