@@ -1,20 +1,12 @@
-
-.title {
-  text-align: right;
-  background-color: green;
-  font-size: 100px;
+#root {
+  background-color: #F6F6F6
 }
-
-.logo {
-  align-items: center;
-  justify-content: left;
-  margin-top: 50px;
-  margin-left: 20px;
-  height: 200px
+@font-face {
+  font-family: boomville;
+  src: url(Boomville.otf)
 }
-
 .title {
-  text-align: right;
+  /* text-align: right; */
   background-color: green;
   font-size: 100px;
   width: 60%;
@@ -27,14 +19,9 @@
   margin-left: 20px;
   width: 40%;
   background-color: #F6F6F6
-
 }
-
 .logo-div {
-  background-color: #F6F6F6;
-  text-align: right;
-  display: flex;
-  align-items: right;
+  align-items: right
 }
 
 /* colors:
