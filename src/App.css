@@ -1,3 +1,4 @@
+
 .title {
   text-align: right;
   background-color: green;
@@ -10,6 +11,22 @@
   margin-top: 50px;
   margin-left: 20px;
   height: 200px
+}
+
+.title {
+  text-align: right;
+  background-color: green;
+  font-size: 100px;
+}
+
+.logo {
+  align-items: center;
+  justify-content: right;
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 40%;
+  background-color: #F6F6F6
+
 }
 
 /* colors:

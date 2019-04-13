@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import CalendarComp from './CalendarComp'
 import QuestionContainer from './QuestionContainer'
 import './App.css';
+import Home from './Home'
 
 class App extends Component {
   render() {
@@ -10,7 +11,6 @@ class App extends Component {
             MAHALO
             <br></br><br></br>
             <CalendarComp />
-            <QuestionContainer />
       </div>
     );
   }
