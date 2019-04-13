@@ -7,8 +7,10 @@ class QuestionForm extends Component {
       <div>
         <form>
           <h1 className="questions">{this.props.question}</h1>
-          <button>Yes</button>
-          <button>No</button>
+          <div className="q-btns">
+            <button className="btn">Yes</button>
+            <button className="btn">No</button>
+          </div>
         </form>
       </div>
     );

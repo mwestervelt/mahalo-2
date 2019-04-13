@@ -1,12 +1,12 @@
 html{
-  height: 100%;
+  min-height: 100%;
 }
 
 body {
   background: linear-gradient(45deg, #ff8365 0%,#ff8365 45%,#f6f6f6 98%);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100%;
+  height: 100%;
 }
 
 @font-face {
@@ -22,7 +22,12 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .questions{
-  font-size: 3.5em;
+  font-size: 5em;
+  text-align: center;
+}
+
+.question-container{
+  margin-top: 30em;
 }
 
 .title {
@@ -34,8 +39,9 @@ h1,h2,h3,h4,h5,h6{
 
 .logo {
   /* justify-content: right; */
-  text-align: right;
+  text-align: center;
   margin-left: 3em;
+  margin-right: 36em;
   padding-left: 3em;
   padding-right:15em;
   width: 35%;
@@ -55,9 +61,10 @@ h1,h2,h3,h4,h5,h6{
   z-index: -1;
   color: #f6f6f6;
   font-size: 1.6em;
-  padding-top: 23em;
-  margin-left: 10em;
+  padding-top: 20em;
+  margin-left: 6em;
   margin-top: 10em;
+  text-align: center;
 }
 
 .line2{
@@ -66,16 +73,16 @@ h1,h2,h3,h4,h5,h6{
 
 .btn{
   float: right;
-  margin-right: 15em;
+  margin-right: 34em;
   padding: 0.7em 3em;
   border-radius: 15px 15px;
   font-size: 2em;
   font-family: 'linotte', sans-serif;
+  background-color: black;
+  color:#f6f6f6;
+  margin-top: 3em;
+}
 
-}
-.btn:hover{
-  opacity: 0.8;
-}
 
 /* colors:
 peach: #FF8365
