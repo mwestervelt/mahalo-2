@@ -3,54 +3,25 @@ import React, { Component } from 'react';
 
 class Dropdown extends Component {
 
-  state = {
-    choice: '',
-    risklevel: ''
-  }
 
-  // componentDidUpdate(prevState) {
-  //   if (this.state.choice !== prevState.choice) {
-  //     this.calculateRisk()
-  //
-  //   }
-  // }
-
-onChange = e => {
-  this.setState({ choice: e.target.value }, () => this.calculateRisk())
+state = {
+  choice: ''
 }
 
-calculateRisk = (e) => {
-  console.log('calculator');
+onChange = e => {
+  this.setState({ choice: e.target.value }, () => this.props.handleChange(this.state.choice))
+}
 
-    switch (this.state.choice) {
-      case 'choose an option':
-        this.setState({ risklevel: '' })
-        break
-      case 'On period right now':
-        this.setState({ risklevel: 'low'})
-        break
-      case '1-4':
-        this.setState({ risklevel: 'low' })
-        break
-      case '5-9':
-        this.setState({ risklevel: 'high' })
-        break
-      case '10':
-        this.setState({ risklevel: 'low' })
-        break
-      default:
-        console.log('mahalo')
-    }
-  }
+
 
 
   render() {
-    console.log(this.state);
+    console.log(this.props);
 
       return (
         <div>
           <header>
-            <h1>this is the the dropdown</h1>
+            <h1>Days since the end of your last period:</h1>
           </header>
           <div>
             <select onChange={this.onChange}>
