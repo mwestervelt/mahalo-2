@@ -10,6 +10,7 @@ state = {
 
 onChange = e => {
   this.setState({ choice: e.target.value }, () => this.props.handleChange(this.state.choice))
+
 }
 
   render() {
@@ -18,10 +19,10 @@ onChange = e => {
       return (
         <div>
           <header>
-            <h1>Days since the end of your last period:</h1>
+            <h1 className="questions">Days since the end of your last period:</h1>
           </header>
           <div>
-            <select onChange={this.onChange}>
+            <select className='drop-a-boi' onChange={this.onChange}>
               <option value='choose an option'>choose an option</option>
               <option value='On period right now'>I'm on my period right now</option>
               <option value='1-4'>1-4 days ago</option>

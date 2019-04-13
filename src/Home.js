@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import logo_white from './mahalo_logo_white.svg'
 import QuestionContainer from './QuestionContainer'
 import InfoCon from './InfoCon'
+import { animateScroll as scroll } from 'react-scroll'
 
 
 export default class Home extends Component {
@@ -18,6 +19,14 @@ export default class Home extends Component {
 
   handleNoQ1 = () => {
     this.setState({ showInfo: true, showQs: false })
+  }
+
+  handleYesQ1 = () => {
+    scroll.scrollTo(1000)
+  }
+
+  handleNoQ2 = () => {
+    scroll.scrollTo(2000)
   }
 
   render(){
@@ -43,7 +52,9 @@ export default class Home extends Component {
 
         {this.state.showQs ?
           <QuestionContainer
+            handleYesQ1={this.handleYesQ1}
             handleNoQ1={this.handleNoQ1}
+            handleNoQ2={this.handleNoQ2}
             choice={this.props.choice}
             risklevel={this.props.risklevel}
             handleChange={this.props.handleChange}

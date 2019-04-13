@@ -33,7 +33,8 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .question-container{
-  margin-top: 30em;
+  margin: 10% auto 10%;
+  /* padding-bottom: 50%; */
 }
 
 .title {
@@ -74,6 +75,20 @@ h1,h2,h3,h4,h5,h6{
   margin-top: 2em;
 }
 
+.drop-a-boi {
+  padding: 0.7em 3em;
+  border-radius: 15px 15px;
+  font-size: 2em;
+  font-family: 'linotte', sans-serif;
+  background-color: black;
+  color:#f6f6f6;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+
+.low-risk {
+  
+}
 
 /* colors:
 peach: #FF8365

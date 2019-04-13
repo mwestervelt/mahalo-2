@@ -4,9 +4,9 @@ import LowRisk from './LowRisk'
 // import QuestionContainer from './QuestionContainer'
 import './App.css';
 import Home from './Home'
+import { animateScroll as scroll } from 'react-scroll'
 
 class App extends Component {
-
 
   state = {
     choice: '',
@@ -26,6 +26,7 @@ class App extends Component {
 
   handleChange = (choice) => {
     this.setState({ choice: choice }, () => this.calculateRisk())
+    scroll.scrollTo(5000)
   }
 
   calculateRisk = () => {
