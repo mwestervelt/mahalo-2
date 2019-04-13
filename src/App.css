@@ -5,6 +5,20 @@
   font-family: boomville;
   src: url(Boomville.otf)
 }
+
+@font-face {
+  font-family: linotte;
+  src: url(Linotte.woff);
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: linotte;
+}
+
+.questions{
+  font-size: 3.5em;
+}
+
 .title {
   /* text-align: right; */
   background-color: green;
