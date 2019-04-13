@@ -8,9 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-            MAHALO
-            <br></br><br></br>
-            <CalendarComp />
+        <QuestionContainer/>
       </div>
     );
   }
