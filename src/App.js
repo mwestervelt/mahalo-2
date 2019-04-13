@@ -56,6 +56,7 @@ class App extends Component {
       <div className="App">
             <Home
               toggleQuestions={this.toggleQuestions}
+
               choice={this.state.choice}
               risklevel={this.state.risklevel}
               handleChange={this.handleChange}

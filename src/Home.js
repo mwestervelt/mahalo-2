@@ -23,13 +23,11 @@ export default class Home extends Component {
   render(){
     console.log(this.state)
     return(
-
       <div>
-        <Fragment>
-          <img className='logo' src={ logo_white } alt='mahalo my guy' />
-          </Fragment>
+          {this.state.showHeader ?
+            <Fragment>
+              <img className='logo' src={ logo_white } alt='mahalo my guy' />
 
-          {this.state.showHeader ? <div>
             <div className='box'>
               <h1>Getting to know if you're ovulating can be scary.</h1>
               <h1 className="line2"> Check your risk of pregnancy with us.</h1>
@@ -39,7 +37,9 @@ export default class Home extends Component {
               onClick={this.toggleQuestions}>
               Check
             </button>
-          </div>: null}
+        
+        </Fragment>
+          : null}
 
         {this.state.showQs ?
           <QuestionContainer
