@@ -9,7 +9,7 @@ class QuestionContainer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="question-container">
         <QuestionForm question={this.state.questions[0]} />
         <QuestionForm question={this.state.questions[1]} />
       </div>
