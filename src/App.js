@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import CalendarComp from './CalendarComp'
+import Dropdown from './Dropdown'
+import HighRisk from './HighRisk'
+import LowRisk from './LowRisk'
 import './App.css';
 
 class App extends Component {
@@ -8,7 +10,9 @@ class App extends Component {
       <div className="App">
             MAHALO
             <br></br><br></br>
-            <CalendarComp />
+            <Dropdown />
+            <HighRisk />
+            <LowRisk />
       </div>
     );
   }
