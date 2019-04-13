@@ -25,20 +25,20 @@ export default class Home extends Component {
     return(
       <div>
           {this.state.showHeader ?
-            <Fragment>
-              <img className='logo' src={ logo_white } alt='mahalo my guy' />
+              <Fragment>
+                <img className='logo' src={ logo_white } alt='mahalo my guy' />
 
-            <div className='box'>
-              <h1>Getting to know if you're ovulating can be scary.</h1>
-              <h1 className="line2"> Check your risk of pregnancy with us.</h1>
-            </div>
-            <button
-              className="btn"
-              onClick={this.toggleQuestions}>
-              Check
-            </button>
-        
-        </Fragment>
+              <div className='box'>
+                <h1>Getting to know if you're ovulating can be scary.</h1>
+                <h1 className="line2"> Check your risk of pregnancy with us.</h1>
+              </div>
+              <button
+                className="btn"
+                onClick={this.toggleQuestions}>
+                Check
+              </button>
+          </Fragment>
+
           : null}
 
         {this.state.showQs ?

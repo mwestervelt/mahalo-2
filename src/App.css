@@ -2,6 +2,11 @@ html{
   min-height: 100%;
 }
 
+.App{
+  margin: 0 auto;
+  text-align: center;
+}
+
 body {
   background: linear-gradient(45deg, #ff8365 0%,#ff8365 45%,#f6f6f6 98%);
   background-size: cover;
@@ -24,6 +29,7 @@ h1,h2,h3,h4,h5,h6{
 .questions{
   font-size: 5em;
   text-align: center;
+  margin-top: 6.5em;
 }
 
 .question-container{
@@ -38,32 +44,19 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .logo {
-  /* justify-content: right; */
-  text-align: center;
-  margin-left: 3em;
-  margin-right: 36em;
-  padding-left: 3em;
-  padding-right:15em;
+  margin: 13em 0 auto;
   width: 35%;
-  /* background-color: #FF8365; */
-  float: right;
-  margin-top: 5em;
 }
 
 .logo-div {
   width: 80em;
-  /* background-color: #FF8365; */
 }
 
 .box {
   height: 7em;
-  width: 90em;
-  z-index: -1;
+  /* width: 90em; */
   color: #f6f6f6;
   font-size: 1.6em;
-  padding-top: 20em;
-  margin-left: 6em;
-  margin-top: 10em;
   text-align: center;
 }
 
@@ -72,15 +65,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn{
-  float: right;
-  margin-right: 34em;
   padding: 0.7em 3em;
   border-radius: 15px 15px;
   font-size: 2em;
   font-family: 'linotte', sans-serif;
   background-color: black;
   color:#f6f6f6;
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 
