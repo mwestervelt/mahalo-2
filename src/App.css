@@ -1,3 +1,6 @@
+#root {
+  background-color: #F6F6F6
+}
 .title {
   text-align: right;
   background-color: green;
@@ -6,10 +9,11 @@
 
 .logo {
   align-items: center;
-  justify-content: left;
+  justify-content: right;
   margin-top: 50px;
   margin-left: 20px;
-  height: 200px
+  width: 40%;
+  background-color: #F6F6F6
 }
 
 /* colors:
