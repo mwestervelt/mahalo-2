@@ -25,6 +25,9 @@ export default class Home extends Component {
             />
           :
           <div>
+            <Fragment>
+              <img className="logo" src={logo_white} alt="mahalo my guy"/>
+            </Fragment>
             <div className='box'>
               <h1>Getting to know if you're ovulating can be scary.</h1>
               <h1 className="line2"> Check your risk of pregnancy with us.</h1>
