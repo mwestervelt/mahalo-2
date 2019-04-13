@@ -8,15 +8,17 @@ class QuestionContainer extends Component {
 
   }
 
+
+
   render() {
     return (
       <div>
         <div>
-          <form>
+
             <h1 className="questions">"Have you recently had unprotected sex?"</h1>
             <button value="yes">Yes</button>
-            <button value="no">No</button>
-          </form>
+            <button onClick={this.props.handleNoQ1} value="no">No</button>
+
           <form>
             <h1 className="questions">"Do you have irregular periods?"</h1>
             <button value="yes">Yes</button>

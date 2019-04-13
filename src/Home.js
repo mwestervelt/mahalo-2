@@ -1,16 +1,23 @@
 import React, { Component, Fragment } from 'react';
 import logo_white from './mahalo_logo_white.svg'
 import QuestionContainer from './QuestionContainer'
+import InfoCon from './InfoCon'
 
 
 export default class Home extends Component {
 
   state = {
-    showQs: false
+    showHeader: true,
+    showQs: false,
+    showInfo: false
   }
 
   toggleQuestions = () => {
-    this.setState({ showQs: !this.state.showQs })
+    this.setState({ showHeader: !this.state.showHeader, showQs: !this.state.showQs })
+  }
+
+  handleNoQ1 = () => {
+    this.setState({ showInfo: true, showQs: false })
   }
 
   render(){
@@ -22,16 +29,7 @@ export default class Home extends Component {
           <img className='logo' src={ logo_white } alt='mahalo my guy' />
           </Fragment>
 
-
-
-        {this.state.showQs ?
-          <QuestionContainer
-            choice={this.props.choice}
-            risklevel={this.props.risklevel}
-            handleChange={this.props.handleChange}
-            />
-          :
-          <div>
+          {this.state.showHeader ? <div>
             <div className='box'>
               <h1>Getting to know if you're ovulating can be scary.</h1>
               <h1 className="line2"> Check your risk of pregnancy with us.</h1>
@@ -41,8 +39,20 @@ export default class Home extends Component {
               onClick={this.toggleQuestions}>
               Check
             </button>
-          </div>
+          </div>: null}
+
+        {this.state.showQs ?
+          <QuestionContainer
+            handleNoQ1={this.handleNoQ1}
+            choice={this.props.choice}
+            risklevel={this.props.risklevel}
+            handleChange={this.props.handleChange}
+            />
+          :
+          null
         }
+
+        {this.state.showInfo ? <InfoCon /> : null }
       </div>
     )
   }
