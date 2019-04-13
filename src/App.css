@@ -1,42 +1,73 @@
 #root {
-  background-color: #F6F6F6
-}
-@font-face {
-  font-family: boomville;
-  src: url(Boomville.otf)
+    background-color: #F6F6F6
 }
 
 @font-face {
-  font-family: linotte;
-  src: url(Linotte.woff);
+    font-family: boomville;
+    src: url(Boomville.otf)
 }
 
-h1,h2,h3,h4,h5,h6{
-  font-family: linotte;
+@font-face {
+    font-family: linotte;
+    src: url(Linotte.woff);
 }
 
-.questions{
-  font-size: 3.5em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: linotte;
+}
+
+.questions {
+    font-size: 3.5em;
 }
 
 .title {
-  /* text-align: right; */
-  background-color: green;
-  font-size: 100px;
-  width: 60%;
+    /* text-align: right; */
+    background-color: green;
+    font-size: 100px;
+    width: 60%;
 }
 
 .logo {
-  /* justify-content: right; */
-  text-align: right;
-  margin-top: 50px;
-  margin-left: 20px;
-  width: 40%;
-  background-color: #F6F6F6
+    /* justify-content: right; */
+    text-align: right;
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 40%;
+    background-color: #F6F6F6
 }
 
 .logo-div {
-  align-items: right
+    align-items: right
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
 }
 
 /* colors:
