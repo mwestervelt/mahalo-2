@@ -1,40 +1,47 @@
-.App {
-  text-align: center;
-  background-color:#ff8365;
-  padding: 10px
+#root {
+  background-color: #F6F6F6
+}
+@font-face {
+  font-family: boomville;
+  src: url(Boomville.otf)
 }
 
-a,a:focus,a:hover{color:#fff;}
-html,body{height:100%;background-color:#ff8365;}
-body{color:#fff;text-align:center;}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: linotte;
+  src: url(Linotte.woff);
 }
 
-.App-header {
-
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,h2,h3,h4,h5,h6{
+  font-family: linotte;
 }
 
-.App-link {
-  color: #61dafb;
+.questions{
+  font-size: 3.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  /* text-align: right; */
+  background-color: green;
+  font-size: 100px;
+  width: 60%;
 }
+
+.logo {
+  /* justify-content: right; */
+  text-align: right;
+  margin-top: 50px;
+  margin-left: 20px;
+  width: 40%;
+  background-color: #F6F6F6
+}
+
+.logo-div {
+  align-items: right
+}
+
+/* colors:
+peach: #FF8365
+green: #O63B16
+yellow: #FFB000
+white: #F6F6F6
+black: #000000 */
