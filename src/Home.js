@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import logo_white from './mahalo_logo_white.svg'
 import QuestionContainer from './QuestionContainer'
 
@@ -16,8 +16,14 @@ export default class Home extends Component {
   render(){
     console.log(this.state)
     return(
-      <div className='logo-div'>
-        <img className='logo' src={ logo_white } alt='logo' />
+
+      <div>
+        <Fragment>
+          <img className='logo' src={ logo_white } alt='mahalo my guy' />
+          </Fragment>
+
+
+
         {this.state.showQs ?
           <QuestionContainer
             choice={this.props.choice}
@@ -25,10 +31,19 @@ export default class Home extends Component {
             handleChange={this.props.handleChange}
             />
           :
-          <button onClick={this.toggleQuestions}>Start!</button>
+          <div>
+            <div className='box'>
+              <h1>Getting to know if you're ovulating can be scary.</h1>
+              <h1 className="line2"> Check your risk of pregnancy with us.</h1>
+            </div>
+            <button
+              className="btn"
+              onClick={this.toggleQuestions}>
+              Check
+            </button>
+          </div>
         }
       </div>
-
     )
   }
 }

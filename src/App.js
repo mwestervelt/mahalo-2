@@ -62,8 +62,6 @@ class App extends Component {
               />
 
             {this.toggleRiskContainer()}
-
-
       </div>
     );
   }
