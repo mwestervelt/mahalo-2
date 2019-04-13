@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Dropdown from './Dropdown'
 import HighRisk from './HighRisk'
 import LowRisk from './LowRisk'
-import QuestionContainer from './QuestionContainer'
+// import QuestionContainer from './QuestionContainer'
 import './App.css';
 import Home from './Home'
 
@@ -13,6 +12,7 @@ class App extends Component {
     choice: '',
     risklevel: ''
   }
+
 
   toggleRiskContainer = () => {
     if (this.state.risklevel === "high") {
@@ -29,8 +29,7 @@ class App extends Component {
   }
 
   calculateRisk = () => {
-    console.log('calculator');
-
+      console.log("in calculateRisk: ", this.state)
       switch (this.state.choice) {
         case 'choose an option':
           this.setState({ risklevel: '' })
@@ -55,13 +54,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-            
+            <Home
+              toggleQuestions={this.toggleQuestions}
 
-            <QuestionContainer/>
-            <Dropdown
               choice={this.state.choice}
               risklevel={this.state.risklevel}
-              handleChange={this.handleChange} />
+              handleChange={this.handleChange}
+              />
+
             {this.toggleRiskContainer()}
       </div>
     );

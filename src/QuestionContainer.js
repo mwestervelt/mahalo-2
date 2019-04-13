@@ -1,17 +1,32 @@
 import React, { Component } from 'react';
-import QuestionForm from './QuestionForm'
+import Dropdown from './Dropdown'
 
 class QuestionContainer extends Component {
-  state={
-    questions: ["Have you recently had unprotected sex?",
-    "Do you have irregular periods?"]
+
+  state = {
+    show: false
+
   }
 
   render() {
     return (
-      <div className="question-container">
-        <QuestionForm question={this.state.questions[0]} />
-        <QuestionForm question={this.state.questions[1]} />
+      <div>
+        <div>
+          <form>
+            <h1 className="questions">"Have you recently had unprotected sex?"</h1>
+            <button value="yes">Yes</button>
+            <button value="no">No</button>
+          </form>
+          <form>
+            <h1 className="questions">"Do you have irregular periods?"</h1>
+            <button value="yes">Yes</button>
+            <button value="no">No</button>
+          </form>
+        </div>
+        <Dropdown
+          choice={this.props.choice}
+          risklevel={this.props.risklevel}
+          handleChange={this.props.handleChange} />
       </div>
     );
   }

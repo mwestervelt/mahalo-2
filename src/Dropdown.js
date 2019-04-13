@@ -12,9 +12,6 @@ onChange = e => {
   this.setState({ choice: e.target.value }, () => this.props.handleChange(this.state.choice))
 }
 
-
-
-
   render() {
     console.log(this.props);
 
