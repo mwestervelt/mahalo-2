@@ -86,9 +86,40 @@ h1,h2,h3,h4,h5,h6{
   margin-bottom: 4em;
 }
 
-.low-risk {
-  
+li{
+  list-style-type: none;
+  font-size: 1.2em
 }
+
+
+
+.low-risk {
+  font-family: linotte;
+  margin-bottom: 5em;
+  margin-top: 22em
+}
+
+.high-risk {
+  font-family: linotte;
+  margin-bottom: 10em;
+  margin-top: 22em;
+}
+
+.head {
+  font-family: linotte;
+  font-size: 7em;
+}
+
+.accordion {
+  font-size: 2em;
+  padding: 0.7em 3em;
+  border-radius: 15px 15px;
+  font-family: 'linotte', sans-serif;
+  background-color: black;
+  color:#f6f6f6;
+  margin-top: 2em;
+}
+
 
 /* colors:
 peach: #FF8365

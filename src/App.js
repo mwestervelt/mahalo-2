@@ -26,7 +26,7 @@ class App extends Component {
 
   handleChange = (choice) => {
     this.setState({ choice: choice }, () => this.calculateRisk())
-    scroll.scrollTo(5000)
+    scroll.scrollTo(4000)
   }
 
   calculateRisk = () => {
