@@ -8,7 +8,6 @@ import Home from './Home'
 
 class App extends Component {
 
-
   state = {
     choice: '',
     risklevel: ''
